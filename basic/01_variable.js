@@ -56,5 +56,5 @@ console.log(`값은 ${num}이고, 타입은 ${typeof num}입니다`)
 const firstName = 'John'
 const lastName = 'snow'
 
-console.log(firstName + '' + lastName) // 옛방식
+console.log(firstName + ' ' + lastName) // 옛방식
 console.log(`${firstName} ${lastName}`) // es6 방식
