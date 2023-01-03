@@ -53,8 +53,17 @@ const num = 100
 const width = 10.5
 console.log(`값은 ${num}이고, 타입은 ${typeof num}입니다`)
 
+const a = 1 / 0
+const b = -25 / 0
+const c = 'html' / 10
+
+console.log(a)
+console.log(b)
+console.log(c)
+
+// string
 const firstName = 'John'
 const lastName = 'snow'
-
-console.log(firstName + ' ' + lastName) // 옛방식
-console.log(`${firstName} ${lastName}`) // es6 방식
+const fullName = firstName + lastName
+console.log(fullName)
+console.log(`${firstName} ${lastName}`)
