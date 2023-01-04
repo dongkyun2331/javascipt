@@ -31,3 +31,67 @@ function showInfo(title, name = '스티브잡스') {
 
 showInfo('게르니카', '피카소')
 showInfo('풍경')
+
+// 4. rest 파라미터 / spread 연산자
+function printAll(...items) {
+  for (let i = 0; i < items.length; i++) {
+    console.log(items[i])
+  }
+}
+
+printAll('봄', '여름', '가을', '겨울', '안영', '커피', '바람')
+
+// 5. scope
+let myMovie = '생활의 발견' // 지역변수 - local 변수
+let movie = '하하하' //전역변수 global 변수
+
+function printMovie() {
+  console.log(movie)
+  console.log(myMovie)
+}
+
+printMovie()
+
+console.log(movie)
+
+// 6.return
+function plus(a, b) {
+  return a + b
+  console('값을 돌려 주었습니다.`')
+}
+
+const sum = plus(20, 30) //50
+console.log(sum)
+
+// 7. 콜백함수
+const printPicaso = function () {
+  console.log('I am Picaso....')
+}
+
+function printJobs() {
+  console.log('I am Jobs....')
+}
+
+const call = function (myName, printPicaso, printJobs) {
+  if (myName == 'Picaso') {
+    printPicaso()
+  } else {
+    printJobs()
+  }
+}
+
+call('Jobs', printPicaso, printJobs)
+
+// 8. 화살표 함수 - arrow function
+// function add(a,b) {
+//     return a+b
+// }
+
+// const add (a,b)=function (a,b) {
+//     return a+b
+// }
+
+const add = (a, b) => a + b
+
+const total = add(10, 20)
+console.log(total)
