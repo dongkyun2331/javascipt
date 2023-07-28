@@ -29,8 +29,8 @@ h1 {
 }
 
 .accordion .content h2::after {
-  font-family: 'xeicon';
-  content: '\e913';
+  font-family: "xeicon";
+  content: "\e913";
   position: absolute;
   right: 0;
   top: 50%;
@@ -39,7 +39,7 @@ h1 {
 }
 
 .accordion .content.active h2::after {
-  content: '\e91a';
+  content: "\e91a";
 }
 
 .accordion .content .text {
